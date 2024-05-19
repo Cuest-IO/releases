@@ -2,12 +2,12 @@ apiVersion: v1
 entries:
   cuest-kubelet:
   - apiVersion: v2
-    created: "2024-05-19T14:34:14.8897828+03:00"
+    created: "2024-05-19T14:49:36.7733954+03:00"
     description: A Helm chart for creating ServiceAccount, RBAC resources and Vnode
       pod
-    digest: be5ab39591c7ef0cdc2089413175473e0e05e26cdf56207b4027c62e9a331238
+    digest: 393b60e12b867df8215e374e454beeb2c40a1bbb0204cf8b8d404a9647c28a78
     name: cuest-kubelet
     urls:
     - cuest-kubelet-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-19T14:34:14.8892702+03:00"
+generated: "2024-05-19T14:49:36.7733954+03:00"
