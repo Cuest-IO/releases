@@ -8,5 +8,5 @@ helm repo update
 
 ## Install Packages
 
-helm install my-cuest-kubelet cuestio-vnode/cuest-kubelet --set AUTH_ID="" --set AUTH_Secret=""
+helm install cuest cuestio-vnode/vnode --set AUTH_ID="" --set AUTH_Secret=""
 
