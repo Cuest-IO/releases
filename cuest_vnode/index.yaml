@@ -6,7 +6,7 @@ entries:
     description: A Helm chart for creating ServiceAccount, RBAC resources and Vnode
       pod
     digest: c040f38ea68d25932b19ccf7b8846f730c1398a061ec9541e070bcfd3be4739e
-    name: cuest-kubelet
+    name: vnode
     urls:
     - cuest-kubelet-0.1.0.tgz
     version: 0.1.0
