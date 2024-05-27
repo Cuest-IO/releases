@@ -1,0 +1,9 @@
+# Environment specific URLs
+env: "dev"
+
+# Secrets and Access values (these should be provided)
+AUTH_ID:  
+AUTH_Secret: 
+ 
+# Default KUBELET_ID
+KUBELET_ID: "vNode-123"    

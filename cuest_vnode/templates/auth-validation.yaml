@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: auth-values-validation
+  annotations:
+    "helm.sh/hook": pre-install
+spec:
+  template:
+    spec:
+      {{- include "validateAuthValues" . }}
+      containers:
+        - name: validate-secrets
+          image: busybox
+          command: ['sh', '-c', 'echo "Validation passed. Proceeding with the deployment."']
+      restartPolicy: OnFailure
+  backoffLimit: 1

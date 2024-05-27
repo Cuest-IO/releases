@@ -1,0 +1,26 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cuest-kubelet
+subjects:
+- kind: ServiceAccount
+  name: cuest-kubelet
+  namespace: default
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cuest-kubelet
+
+# apiVersion: rbac.authorization.k8s.io/v1
+# kind: RoleBinding
+# metadata:
+#   name: cuest-kubelet-token-creator
+#   namespace: default
+# roleRef:
+#   kind: ClusterRole
+#   name: system:controller:persistent-volume-binder
+#   apiGroup: rbac.authorization.k8s.io
+# subjects:
+# - kind: ServiceAccount
+#   name: cuest-kubelet
+#   namespace: default
