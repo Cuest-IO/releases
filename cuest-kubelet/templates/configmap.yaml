@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vkubelet-cuest-0-cfg
+data:
+  vkubelet-cuest-0-cfg.json: |
+    {
+        "virtual-kubelet": {
+          "cpu": "2",
+          "memory": "32Gi",
+          "pods": "128"
+        }
+      }
